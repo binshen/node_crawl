@@ -1,0 +1,9 @@
+{
+  "name": "node-crawl",
+  "version": "0.0.1",
+  "dependencies": {
+    "co": "~4.6.0",
+    "co-request": "~1.0.0",
+    "jsdom": "~9.9.1"
+  }
+}
