@@ -20,14 +20,14 @@ co(function* () {
             var td = $(this).find("td");
             company.push({ name: td.eq(0).text().trim(), num: td.eq(1).text().trim() });
         });
-        fs.writeFileSync(__dirname + "/company.json", JSON.stringify(company, null, 4));
+        fs.writeFileSync(__dirname + "/out/company.json", JSON.stringify(company, null, 4));
 
         var person = [];
         $("#TextContent2 tbody tr").each(function(){
             var td = $(this).find("td");
             person.push({ name: td.eq(0).text().trim(), num: td.eq(1).text().trim() });
         });
-        fs.writeFileSync(__dirname + "/person.json", JSON.stringify(person, null, 4));
+        fs.writeFileSync(__dirname + "/out/person.json", JSON.stringify(person, null, 4));
     });
 }).catch(function (err) {
     console.log(err);
